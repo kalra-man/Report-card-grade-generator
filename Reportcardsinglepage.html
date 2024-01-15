@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Report card grade generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <style>
+
+.cursive-title {
+      font-family: cursive, sans-serif;
+      font-size: 48px;
+      text-align: center;
+      color: #000; 
+  }
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color:rgb(81, 81, 173);
+}
+
+.button-74:active {
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+  .container1 {
+            background-image: url('bg.png');
+            border: double 2px black;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+  
+    </style>
+</head>
+<body>
+    <!--Page01-->
+    <div id="Page01"> 
+        <div class="container  container1">
+            <h1 class="text-center" style=" font-size: 45px; color: black; color: lightcoral;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; color: lightcoral;"> Welcome </h1>
+         
+           <h2 class="text-center cursive-title" style=" font-size: 50px; color: black; color: rgb(81, 81, 173);
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;" > Report card </h2>
+           <br/>
+        </div>
+    <div class="container1 container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                
+                <form style="padding:10px; background-color: lightcoral ;" class="form-group mt-3" >
+                      
+                    <div>
+                      <h2 class="text-center" style="color: black; "> Enter the following information </h2>
+                        <label for="name" style="color: black; font-size: 20px;"> Your Name: </label>
+                        <input class="form-control" type="text"  id="Name" placeholder="Please Enter Your Name">
+                         </div>
+                         <div>
+                            <label for="roll no" style="color: black; font-size: 20px;"> Your Roll No: </label>
+                            <input class="form-control" type="text" id="RollNo" placeholder="Please Enter Your Roll No">
+                             </div>
+                             <div>
+                                    <label for="Grade" style="color: black; font-size: 20px;"> Your Grade: </label>
+                                    <input class="form-control" type="text" id="grade" placeholder="Please Enter Your Grade">
+                               </div>
+                             <div>
+                                <label for="School" style="color: black; font-size: 20px;" > Your School:</label>
+                                <input class="form-control" type="text"  id="School" placeholder="Please Enter Your School">
+                             </br>
+                            </div>
+                            <div>
+                              <label for="School" style="color: black; font-size: 10px;" > All information is mandatory! </label>
+                         </div>
+                        
+
+                          </form>
+                           
+                             <center><button class="button-74" id="Submit">Submit</button></center>
+                            
+                   
+    
+        </div>
+        </div>
+    </div>
+    </div>
+     <!--Page02-->
+    <div id="Page02"> 
+        <div class="container  container1">
+            <h1 class="text-center" style=" font-size: 45px; color: black; color: lightcoral;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; color: lightcoral;"> Welcome </h1>
+         
+           <h2 class="text-center cursive-title" style=" font-size: 50px; color: black; color: rgb(81, 81, 173);
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;" > Report card </h2>
+           <br/> 
+        </div> 
+    <div class="container1 container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                
+                <form style="padding:10px; background-color: lightcoral ;" class="form-group mt-3" >
+                      
+                    <div>
+                      <h2 class="text-center" style="color: black;"> Enter Your Scores </h2>
+                        <label for="english score" style="color: #000000; font-size: 20px; " > ENGLISH: </label>
+                        <input   class="form-control"  type="text" id="english" placeholder="Please Enter Your Score Out Of 50">
+                         </div>
+                         <div>
+                            <label for="Math score" style="color: black; font-size: 20px;"> MATH: </label>
+                            <input class="form-control"  type="text" id="math" placeholder="Please Enter Your Score Out Of 50">
+                             </div>
+                             <div>
+                                    <label for="Science score" style="color: black; font-size: 20px;"> SCIENCE: </label>
+                                    <input  class="form-control"  type="text" id="science" placeholder="Please Enter Your Score Out Of 50">
+                                     </div>
+                             <div>
+                                <label for="History score" style="color: black; font-size: 20px;"> HISTORY: </label>
+                                <input  class="form-control"  type="text" id="history" placeholder="Please Enter Your Score Out Of 50">
+                           </div>
+                              </br>
+                           
+                            </form>
+                              <center><button class="button-74" id="Calculate">Calculate</button></center>
+                   
+    
+            </div>
+        </div>
+    </div>
+    </div>
+     <!--Page03-->
+    <div id="Page03"> 
+      <div class="container1 container"> 
+        <h2 class="text-center cursive-title" style=" font-size: 70px; color: black; color: rgb(81, 81, 173);
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;" > CONGRATULATIONS!! </h2>
+       <br/>
+      </div>
+      
+<div class="container1 container mt-3">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            
+            <form style="padding:10px; background-color: lightcoral ;" class="form-group mt-3" >
+                  
+                <div>
+                  <h2 class="text-center "> You have a grand total of: </h2>
+                </br>
+                <center>
+                  <input type="text" style="background-color: lightcoral; text-align: center; font-size: 40px; border:none;" id="total"> 
+                </center></br>
+               
+                <h2 class="text-center "> Your Grade Is: </h2>
+                </br>
+                <center>
+                <input type="text" style="background-color: lightcoral; text-align: center; font-size: 40px;  border:none;" id="Grade"> 
+                </center></br>
+                <center>
+                <img src="trophy.png.png" style="height: 200px; "> </center>
+                <textarea id="comments" style="height:100px; width:510px;"> </textarea>
+                </div>             
+
+
+                    
+                         
+                        </form>
+               
+ 
+        </div>
+    </div>
+</div>
+    </div>
+     <!--Page04-->
+    <div id="Page04">
+    <div class="container1 container " > 
+       <h2 style=" font-size: 70px; color: black; color: rgb(81, 81, 173);
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;" class="text-center cursive-title ">
+       FOCUS ON STUDIES!! </h2>
+       <br/>
+       </div>
+  
+    
+<div class="container1 container mt-3">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            
+            <form style="padding:10px; background-color: lightcoral ;" class="form-group mt-3" >
+                  
+                <div>
+                  <h2 class="text-center "> You have a grand total of: </h2>
+                </br>
+                <center>
+                  <input type="text" style="background-color: lightcoral; text-align: center; font-size: 40px; border:none;" id="total1"> 
+                </center></br>
+               
+                <h2 class="text-center "> Your Grade Is: </h2>
+                </br>
+                <center>
+                <input type="text" style="background-color: lightcoral; text-align: center; font-size: 40px;  border:none;" id="Grade1"> 
+                </center></br>
+                <center>
+                    <img src="study.png" style="height: 200px; "> </center>
+                <textarea style="height:100px; width:510px;" id="comment"> </textarea>
+                
+
+
+                    
+                         
+                        </form>
+               
+
+        </div>
+    </div>
+</div>
+    </div>
+
+   <script>
+    var firstname_g,rollno_g, grade_g, school_g, english_g, math_g, science_g, history_g, total_g;
+
+                $(document).ready(function(){
+
+                $("#Page01").show();
+                $("#Page02").hide();
+                $("#Page03").hide();
+                $("#Page04").hide();
+
+                $("#Submit").click(function(e){
+                    if (($("#Name").val()==="")||($("#RollNo").val()==="")|| ($("#grade").val()==="")||($("#School").val()==="" )){
+                        alert("Please enter in all the mandatory information :)"); 
+                        return;
+                    }
+                    firstname_g=$('#Name').val();
+                    rollno_g=$('#RollNo').val();
+                    grade_g=$('#grade').val();
+                    school_g=$('#School').val();
+
+                    if (!/^[A-Za-z]+$/.test(firstname_g)) {
+                    alert("Please enter letters only in the Name field.");
+                    return;
+                    }
+                    if (!/^[0-9]+$/.test(rollno_g)) {
+                    alert("Please enter numbers only in the Rollno field.");
+                    return;
+                    }
+                    if (!/^[0-9]+$/.test(grade_g)) {
+                    alert("Please enter Numbers only in the Grade field.");
+                    return;
+                    }
+                    if (!/^[A-Za-z]+$/.test(school_g)) {
+                    alert("Please enter letters only in the School field.");
+                    return;
+                    }
+                    
+                    $("#Page01").hide();
+                    $("#Page02").show();
+                    $("#Page03").hide();
+                    $("#Page04").hide();
+
+                    
+                  });
+                  $("#Calculate").click(function(e){
+                  if (($("#english").val()==="")||($("#math").val()==="")|| ($("#science").val()==="")||($("#history").val()==="" )){
+                        alert("Please enter in all the mandatory information :)"); 
+                        return;
+                    }
+                    english_g=$('#english').val();
+                    math_g=$('#math').val();
+                    science_g=$('#science').val();
+                    history_g=$('#history').val();
+
+                    if (math_g > 50 || english_g > 50 || science_g > 50 || history_g > 50) {
+                alert("Mark should not be greater than 50");
+                return; }
+
+                else{
+
+                  total_g= parseInt(math_g)+parseInt(english_g)+parseInt(science_g)+parseInt(history_g);
+                  
+                  $('#total').val(total_g);
+                } 
+                
+                
+                
+
+                if (isNaN(math_g) || isNaN(english_g) || isNaN(science_g) || isNaN(history_g) ) {
+                   alert("Please only enter  numbers in the marks field");
+               return;
+               }
+               
+              if (total_g >= 189) {
+                $('#Grade').val("A+");
+                $('#comments').val("Spectacular work!! " + firstname_g + " Keep up the good work and keep working hard :)");
+                $("#Page01").hide();
+                $("#Page02").hide();
+                $("#Page03").show();
+                $("#Page04").hide();
+                  }
+
+               else if (total_g > 169) {
+                $('#Grade').val("A");
+                $('#comments').val("Excellent work!! " + firstname_g + " keep up the good work and keep working hard :)");
+                $("#Page01").hide();
+                $("#Page02").hide();
+                $("#Page03").show();
+                $("#Page04").hide();
+              }
+
+              else if (total_g > 149) {
+                $('#Grade').val("B+");
+                $('#comments').val("Great work! " + firstname_g + " keep up the good work and keep working hard :)");
+                $("#Page01").hide();
+                $("#Page02").hide();
+                $("#Page03").show();
+                $("#Page04").hide();
+              }
+
+              else if (total_g > 129) {
+                $('#Grade').val("B");
+                $('#comments').val("Nice work! " + firstname_g + " keep up the good work and keep working hard:)");
+                $("#Page01").hide();
+                $("#Page02").hide();
+                $("#Page03").show();
+                $("#Page04").hide();
+              }
+
+              else if (total_g > 109) {
+                $('#Grade').val("C+");
+                $('#comments').val("Good work! " + firstname_g + " keep working hard and dont give up :)");
+                $("#Page01").hide();
+                $("#Page02").hide();
+                $("#Page03").show();
+                $("#Page04").hide();
+              }
+
+              else if (total_g > 89) {
+                $('#Grade').val("C");
+                $('#comments').val("Good stuff!" + firstname_g + " keep working hard and dont give up :) ");
+                $("#Page01").hide();
+                $("#Page02").hide();
+                $("#Page03").show();
+                $("#Page04").hide();
+              }
+
+              else if (total_g > 69) {
+                $('#Grade').val("D+");
+                $('#comments').val("Lot of room for improvement! " + firstname_g + " keep working hard and dont give up :) ");
+                $("#Page01").hide();
+                $("#Page02").hide();
+                $("#Page03").show();
+                $("#Page04").hide();
+              }
+
+              else if (total_g > 49) {
+                $('#Grade').val("D");
+                $('#comments').val("Work harder! :)" + firstname_g + "keep working hard and dont give up :)  ");
+                $("#Page01").hide();
+                $("#Page02").hide();
+                $("#Page03").show();
+                $("#Page04").hide();
+              }
+
+              else if (total_g <= 49) {             
+                $('#total1').val(total_g);
+                $('#Grade1').val("F");
+                $('#comment').val("Lots of area to improve on :)" + firstname_g + " Focus on studies to get better marks. You are failing :( Keep working hard and don't give up)");
+                $("#Page01").hide();
+                $("#Page02").hide();
+                $("#Page03").hide();
+                $("#Page04").show();
+              }
+
+                   
+
+                  
+                  });
+                  
+                   
+            });
+    
+</script>
+</body>
+</html> 

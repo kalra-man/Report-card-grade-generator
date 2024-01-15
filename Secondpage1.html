@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+        .cursive-title {
+      font-family: cursive, sans-serif;
+      font-size: 48px;
+      text-align: center;
+      color: #000; 
+  }
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color:rgb(81, 81, 173);
+}
+
+.button-74:active {
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+  .container1 {
+            background-image: url('bg.png');
+            border: double 2px black;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+  
+      </style>
+
+</head>
+<body>
+    <div class="container  container1">
+        <h1 class="text-center" style=" font-size: 45px; color: black; color: lightcoral;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; color: lightcoral;"> Welcome </h1>
+     
+       <h2 class="text-center cursive-title" style=" font-size: 50px; color: black; color: rgb(81, 81, 173);
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;" > Report card </h2>
+       <br/>
+    </div>
+<div class="container1 container mt-3">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            
+            <form style="padding:10px; background-color: lightcoral ;" class="form-group mt-3" >
+                  
+                <div class="form-group">
+                  <h2 class="text-center" style="color: black;"> Enter Your Scores </h2>
+                    <label for="name" style="color: black; font-size: 20px; " > ENGLISH: </label>
+                    <input type="text" class="form-control" id="Name" placeholder="Please Enter Your Score Out Of 50">
+                     </div>
+                     <div class="form-group">
+                        <label for="name" style="color: black; font-size: 20px;"> MATH: </label>
+                        <input type="name" class="form-control" id="Roll No" placeholder="Please Enter Your Score Out Of 50">
+                         </div>
+                         <div class="form-group">
+                                <label for="name" style="color: black; font-size: 20px;"> SCIENCE: </label>
+                                <input type="age" class="form-control" id="age" placeholder="Please Enter Your Score Out Of 50">
+                                 </div>
+                         <div class="form-group">
+                            <label for="School" style="color: black; font-size: 20px;"> HISTORY: </label>
+                            <input type="school" class="form-control" id="School" placeholder="Please Enter Your Score Out Of 50">
+                         </br>
+                         <center><button type="submit" class="button-74">Submit</button></center>
+                        </form>
+               
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
